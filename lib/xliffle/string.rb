@@ -29,7 +29,8 @@ module Xliffle
     private
 
     def attributes
-      attributes = { id: @id }
+      attributes = { }
+      attributes[:id] = @id if @id
       attributes[:resname] = @resource_name if @resource_name
 
       attributes
