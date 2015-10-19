@@ -1,6 +1,6 @@
 module Xliffle
   class String
-    attr_reader :id, :source, :target, :notes, :resource_name
+    attr_reader :id, :source_string, :target_string, :notes, :resource_name
 
     def initialize(id, source_string, target_string, options={})
       @id = id
