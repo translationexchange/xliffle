@@ -10,8 +10,8 @@ module Xliffle
       @notes = []
     end
 
-    def note(note, priority=2)
-      note = Xliffle::Note.new(note, priority)
+    def note(note, options = {})
+      note = Xliffle::Note.new(note, options)
       @notes << note
       note
     end
