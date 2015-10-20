@@ -17,9 +17,9 @@ module Xliffle
       end
 
       def to_xliff(xliff)
-        xliff.tag!('count-group', {name: @name}) do |header|
+        xliff.tag!('count-group', {:name => @name}) do |header|
           self.counts.each do |element|
-            header.tag!('count', {'count-type': element[:type]}, element[:value])
+            header.tag!('count', {'count-type' => element[:type]}, element[:value])
           end
         end
       end
